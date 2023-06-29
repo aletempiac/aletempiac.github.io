@@ -11,30 +11,56 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Doctor of Philosophy - Ph.D. in Computer Science, EPFL (École Polytechnique Fédérale de Lausanne), 2020 - present
+* M.Sc. in Computer Engineering, Télécom Paris, 2020
+  * Specilization in _Smart Objects_
+  * Thesis: _Implementation of Algorithms for Synthesis of Digital Circuits_
+* M.Sc. in Computer Engineering, Politecnico di Torino, 2020
+  * Specilization in _Embedded Systems_
+  * Thesis: _Implementation of Algorithms for Synthesis of Digital Circuits_
+* B.Sc. in Computer Engineering, Politecnico di Torino, 2017
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Since 2020: Researcher and Ph.D. student at EPFL
+  * Research in electronics design automation (EDA), logic synthesis, and emerging technologies
+  * Teaching undergraduate and graduate courses and supervising Master's projects
+  * Supervisor: Prof.Dr. Giovanni De Micheli, _Integrated Systems Laboratory (LSI)_
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+* 2022: Ph.D. Residency at X, the moonshot factory
+  * Logic synthesis and electronics design automation (EDA)
+  * Part of the work will be published at DAC 2023
+
+* 2020: R&D Engineer at Télécom Paris
+  * Implementation of a model-checker for embedded system models on [TTool](https://ttool.telecom-paris.fr)
+  * The work has been published at MODELSWARD 21, MODELSWARD 22, and in a Springer book chapter
+  * Best poster award at MODELSWARD 21
+
+* 2019: R&D Intern at Synopsys
+  * Implementation of timing-driven algorithms for synthesis of digital circuits
+  * The work is contained in the thesis _Implementation of Algorithms for Synthesis of Digital Circuits_
+
+* Since 2017: Teaching Assistant
+  * At Politecnico di Torino: _Algorithms and Programming in C_, _Object-oriented Programming_
+  * At EPFL: _Design Technologies for Integrated Systems_, _Real-time Embedded Systems_, _Digital Systems Design_
+
+Projects
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Mockturtle: _A logic synthesis framework_
+  * Development of logic synthesis algorithms in C++-17
+  * Available on [GitHub](https://github.com/lsils/mockturtle)
+* TTool: _A toolkit for edition, simulation and formal verification of UML and SysML diagrams_
+  * Development of the SysML model-checker for formal verification (AVATAR)
+  * Available on [GitLab](https://gitlab.telecom-paris.fr/mbe-tools/TTool/)
+* LDPC HW Decoder: _Design of a Low Density Parity Check codes channel decoder for 5G wireless communications_
+  * Analysis and testing of different algorithms of low density parity check decoding followed by an efficient fixed-point hardware implementation for FPGA's
+* More on [GitHub](https://github.com/aletempiac)
+
+Honors and Awards
+======
+* IWLS 2021 Best Student Paper Candidate: **"From Logic to Gates: A Versatile Mapping Approach to Restructure Logic"**
+* MODELSWARD 2021 Best Poster Award: **"Direct Model-checking of SysML Models"**
+* EDIC IC Fellowship, EPFL, 2020
 
 Publications
 ======
@@ -53,7 +79,37 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Skills
+======
+* Languages
+  * English
+  * Italian
+  * French
+* Programming
+  * C/C++
+  * VHDL, Verilog
+  * Java
+  * Python
+  * Many more
+* Knowledge
+  * Algorithms
+  * Data structures
+  * Digital Design
+  * Microelectronics
+  * Computer Architectures
+  * Logic synthesis and optimization algorithms
+  * Satisfiability solving
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Reviewer of several conferences and journals
+  * TCAD
+  * ICCAD
+  * DAC
+  * DATE
+  * IWLS
+  * DDECS
+* Maintainer of the [EPFL Combinational Benchmark Suite](https://www.epfl.ch/labs/lsi/page-102566-en-html/benchmarks/)
+  * Track the best results and advances in logic synthesis
+  * Present annually at the [International Workshop on Logic & Synthesis](https://www.iwls.org/) the new updates and best results
