@@ -81,14 +81,14 @@ analytics:
 # Site Author
 author:
   name             : "Alessandro Tempia Calvino"
-  avatar           : "profile.png"
+  avatar           : "photo.jpg"
   bio              : "Ph.D. Caldidate in Computer Science"
   location         : "Lausanne, Switzerland"
-  employer         :  "Swiss Federal Institute of Technology Lausanne (EPFL)"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  employer         :  "EPFL"
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=OzJdDk0AAAAJ&hl=en"
   email            : "alessandro.tempiacalvino@epfl.ch"
-  researchgate     :  "https://www.researchgate.net/profile/Alessandro-Tempia-Calvino"
+  researchgate     : "https://www.researchgate.net/profile/Alessandro-Tempia-Calvino"
   uri              :
   bitbucket        :
   codepen          :
