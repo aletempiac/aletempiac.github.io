@@ -58,9 +58,10 @@ Projects
 
 Honors and Awards
 ======
+* Best paper award at VLSI-SoC 2023: **"Synthesis of SFQ Circuits with Compound Gates"**
 * First place in the IWLS 2022 contest: **"Synthesis of small circuits for completely-specified multi-output Boolean functions represented using truth tables"**
-* IWLS 2021 Best Student Paper Candidate: **"From Logic to Gates: A Versatile Mapping Approach to Restructure Logic"**
-* MODELSWARD 2021 Best Poster Award: **"Direct Model-checking of SysML Models"**
+* Best Student Paper Candidate at IWLS 2021: **"From Logic to Gates: A Versatile Mapping Approach to Restructure Logic"**
+* Best Poster Award at MODELSWARD 2021: **"Direct Model-checking of SysML Models"**
 * EDIC IC Fellowship, EPFL, 2020
 
 Publications
