@@ -7,7 +7,11 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<iframe src="/files/pdf/resume.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+
+You can download a PDF copy of my CV [here](/files/pdf/resume.pdf).
+
+<!-- {% include base_path %}
 
 Education
 ======
@@ -114,4 +118,4 @@ Service and leadership
   * DDECS
 * Maintainer of the [EPFL Combinational Benchmark Suite](https://www.epfl.ch/labs/lsi/page-102566-en-html/benchmarks/)
   * Track the best results and advances in logic synthesis
-  * Present annually at the [International Workshop on Logic & Synthesis](https://www.iwls.org/) the new updates and best results
+  * Present annually at the [International Workshop on Logic & Synthesis](https://www.iwls.org/) the new updates and best results -->
