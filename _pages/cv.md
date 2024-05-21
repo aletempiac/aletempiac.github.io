@@ -7,9 +7,9 @@ redirect_from:
   - /resume
 ---
 
-<iframe src="/files/pdf/resume.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="/files/resume.pdf" width="100%" height="700" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
-You can download a PDF copy of my CV [here](/files/pdf/resume.pdf).
+You can download a PDF copy of my CV [here](/files/resume.pdf).
 
 <!-- {% include base_path %}
 
