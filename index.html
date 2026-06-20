@@ -1,0 +1,67 @@
+---
+layout: default
+title: "About"
+permalink: /
+description: "Alessandro Tempia Calvino - researcher in logic synthesis, technology mapping, and electronic design automation."
+---
+
+<div class="page">
+  <div class="container">
+
+    <section class="hero">
+      <img class="hero__photo" src="{{ '/images/photo.jpg' | relative_url }}" alt="{{ site.author.name }}">
+      <div>
+        <h1 class="hero__name">{{ site.author.name }}</h1>
+        <p class="hero__role">{{ site.author.bio }}</p>
+        <p class="hero__meta">
+          {% if site.author.employer %}{{ site.author.employer }}{% endif %}{% if site.author.location %} &middot; {{ site.author.location }}{% endif %}
+        </p>
+        {% include social-links.html %}
+      </div>
+    </section>
+
+    <section class="section prose" id="about">
+      <p>I am a Senior Staff Engineer in Research and Development within <a href="https://www.synopsys.com/" target="_blank" rel="noopener">Synopsys</a>' Design Technology Group in Sunnyvale, California, where I work on the next generation of logic synthesis technologies.</p>
+
+      <p>My work focuses on Electronic Design Automation (EDA), logic synthesis, and optimization algorithms for digital circuits. During my Ph.D. at EPFL's Integrated Systems Laboratory (LSI), advised by Prof. Giovanni De Micheli, I developed state-of-the-art synthesis methods for advanced technologies&mdash;spanning conventional CMOS for FPGAs and standard-cell designs, as well as superconducting electronics such as the Adiabatic Quantum-Flux Parametron (AQFP) and Rapid Single-Flux Quantum (RSFQ). My doctoral research was recognized with the 2025 ACM SIGDA Outstanding Dissertation Award in EDA, along with other best paper awards and nominations.</p>
+
+      <p>Much of my work is open-sourced in the logic synthesis library <a href="https://github.com/lsils/mockturtle" target="_blank" rel="noopener">Mockturtle</a>, which I help maintain. I am also a maintainer of the <a href="https://www.epfl.ch/labs/lsi/page-102566-en-html/benchmarks/" target="_blank" rel="noopener">EPFL Combinational Benchmark Suite</a> and its associated contest, whose best results are presented annually at the <a href="https://www.iwls.org/" target="_blank" rel="noopener">International Workshop on Logic &amp; Synthesis</a> (IWLS).</p>
+
+      {% assign talks_count = site.data.talks.invited.size | plus: site.data.talks.conference.size %}
+      <ul class="stats">
+        <li><span class="num">{{ site.data.publications | size }}</span><span class="lbl">Publications</span></li>
+        <li><span class="num">{{ talks_count }}</span><span class="lbl">Talks</span></li>
+        <li><span class="num">{{ site.data.awards | size }}</span><span class="lbl">Awards</span></li>
+      </ul>
+    </section>
+
+    <section class="section" id="recent">
+      <div class="section__head">
+        <h2>Recent publications</h2>
+        <a class="section__link" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+      </div>
+      <div>
+        {% assign recent = site.data.publications | sort: "date" | reverse %}
+        {% for p in recent limit: 5 %}
+          {% include publication-item.html pub=p %}
+        {% endfor %}
+      </div>
+    </section>
+
+    {% assign highlighted = site.data.awards | where: "highlight", true %}
+    {% if highlighted.size > 0 %}
+    <section class="section" id="highlights">
+      <div class="section__head">
+        <h2>Highlights</h2>
+        <a class="section__link" href="{{ '/awards/' | relative_url }}">All awards &rarr;</a>
+      </div>
+      <div>
+        {% for a in highlighted %}
+          {% include award-item.html award=a %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+  </div>
+</div>

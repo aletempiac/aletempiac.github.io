@@ -1,0 +1,27 @@
+---
+layout: page
+title: "Patents"
+permalink: /patents/
+lead: "Filed and granted patents."
+description: "Patents by Alessandro Tempia Calvino."
+---
+
+{% assign patents = site.data.patents %}
+<div>
+  {% for pt in patents %}
+    <article class="pub">
+      <div class="pub__aside">
+        <span class="badge badge--year">{{ pt.year }}</span>
+      </div>
+      <div class="pub__body">
+        <h3 class="pub__title">
+          {% if pt.url %}<a href="{{ pt.url }}" target="_blank" rel="noopener">{{ pt.title }}</a>{% else %}{{ pt.title }}{% endif %}
+        </h3>
+        {% if pt.inventors %}
+        <p class="pub__authors">{{ pt.inventors | replace: "A. Tempia Calvino", "<strong>A. Tempia Calvino</strong>" }}</p>
+        {% endif %}
+        <p class="pub__venue">{{ pt.number }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>

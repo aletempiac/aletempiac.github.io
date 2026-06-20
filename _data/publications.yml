@@ -1,0 +1,519 @@
+# Publications
+# To add a paper, append a new entry. Newest entries should go on top.
+# Fields:
+#   title    (required) - paper title
+#   authors  (optional) - author list as a single string; your own name is bolded automatically
+#   venue    (required) - full venue / journal name
+#   short    (optional) - short venue label shown as a badge (e.g. ASP-DAC, TCAD)
+#   year     (required) - publication year (used for grouping)
+#   date     (required) - YYYY-MM-DD (used for sorting within a year)
+#   type     (required) - one of: journal, conference, workshop, preprint, thesis
+#   url      (optional) - link to the paper / record page
+#   pdf      (optional) - direct link to a PDF (local paths allowed, e.g. /files/foo.pdf)
+#   award    (optional) - award text, shown as a highlighted badge
+#   abstract (optional) - short abstract / summary
+
+- title: "Shared Logic Unleashed: Multiple-node Boolean Optimization for Next-Gen Synthesis"
+  authors: "A. Tempia Calvino, A. Xess, A. Prasad, J. Minz, E. Testa, W. Lau Neto, A. Mishchenko, G. De Micheli, P. Vuillod, L. Amaru"
+  venue: "Design Automation Conference (DAC)"
+  short: "DAC"
+  year: 2026
+  date: 2026-06-01
+  type: conference
+
+- title: "Unlocking Automated Datapath Gating via Machine Learning Power Prediction"
+  authors: "F. Marranghello, G. Meuli, B. Gupta, A. Tempia Calvino, E. Testa, W. Lau Neto, P. Vuillod, L. Amaru"
+  venue: "Design Automation Conference (DAC)"
+  short: "DAC"
+  year: 2026
+  date: 2026-06-02
+  type: conference
+
+- title: "Area-Oriented Resubstitution For Networks of Look-Up Tables"
+  authors: "A. Costamagna, A. Tempia Calvino, A. Mishchenko, G. De Micheli"
+  venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+  short: "TCAD"
+  year: 2025
+  date: 2025-06-01
+  type: journal
+  abstract: >-
+    This paper addresses the challenge of reducing the number of nodes in Look-Up Table (LUT)
+    networks, with two significant applications: minimizing node count to meet FPGA resource
+    constraints, and area-oriented design space exploration for standard-cell designs, where
+    collapsing a circuit into a LUT network, restructuring it, and remapping helps escape local
+    minima. State-of-the-art substitution algorithms for LUT networks rely heavily on SAT solving,
+    limiting the number of optimization attempts and the size of substitution sub-networks to one
+    node. Conversely, our method relies on circuit simulation to increase the number of substitution
+    candidates and enables substitutions with more than one node. Experimental results show the
+    method identifies optimization opportunities overlooked by other methods, improving 11 out of 23
+    best-known results in the EPFL synthesis competition and yielding a 3.46% area reduction compared
+    to the state-of-the-art.
+
+- title: "Ashenhurst-Curtis Decomposition Using Don't Cares"
+  authors: "B. Hien, M. Walter, A. Tempia Calvino, A. Mishchenko, R. Wille"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2025
+  date: 2025-06-01
+  type: workshop
+  abstract: >-
+    Ashenhurst-Curtis decomposition (ACD) is a Boolean decomposition technique widely used in logic
+    synthesis for tasks such as the decomposition of multi-valued relations, the encoding of
+    multi-valued networks, and technology mapping into standard cells for ASICs and lookup tables
+    (LUTs) for FPGAs. A recent truth-table-based implementation of ACD has proven effective for
+    delay-driven LUT mapping while reducing the number of lookup tables, but it does not leverage the
+    flexibility provided by don't-care conditions. In this paper, we enhance ACD by incorporating
+    controllability don't-cares extracted from cuts. Exploiting these additional degrees of freedom,
+    the proposed method increases the decomposition success rate of practical functions into 6-LUTs
+    from 51% to 53.4% and lowers the average number of LUTs per decomposition from 2.50 to 2.46, with
+    even larger gains for large fixed free sets, at only a 1.5x runtime overhead.
+
+- title: "Area-Oriented Optimization After Standard-Cell Mapping"
+  authors: "A. Costamagna, A. Tempia Calvino, A. Mishchenko, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2025
+  date: 2025-01-20
+  type: conference
+  abstract: >-
+    We address the problem of minimizing the area of circuits mapped to a technology library, with or
+    without delay constraints. While traditional methods first optimize a technology-independent
+    representation and then perform technology mapping, this paper explores the potential for further
+    optimizations through technology-dependent algorithms. We propose an optimization engine for
+    mapped circuits that relies on a database of mapped sub-networks for efficient resynthesis.
+    Experimental results on the EPFL benchmarks after area-oriented optimization and mapping show that
+    the proposed method leads to average area improvements of 5.47% without degrading the delay.
+
+- title: "Back-end-aware Fault-tolerant Quantum Oracle Synthesis"
+  authors: "M. Yu, A. Tempia Calvino, M. Soeken, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2025
+  date: 2025-01-21
+  type: conference
+  abstract: >-
+    Quantum oracle synthesis involves compiling arbitrary Boolean functions into quantum circuits
+    using the gates supported by the target quantum computer. In fault-tolerant quantum computing,
+    these gates (e.g., the Clifford+T library) must be further expressed by logical quantum error
+    correction (QEC) code operations, a process known as back-end compilation. This paper enhances
+    current XAG-based oracle synthesis techniques by establishing a link between the properties of
+    XOR-AND-inverter graphs (XAGs) and the quality measures of back-end-compiled quantum oracles.
+    This connection unlocks additional optimization opportunities: experimental results demonstrate
+    average reductions of 4.49% in T count, 7.00% in logical time steps, and 14.89% in helper qubit
+    count.
+
+- title: "Technology Mapping and Optimization Algorithms for Logic Synthesis of Advanced Technologies"
+  authors: "A. Tempia Calvino"
+  venue: "PhD Thesis, EPFL"
+  short: "PhD Thesis"
+  year: 2024
+  date: 2024-10-04
+  type: thesis
+  url: "https://infoscience.epfl.ch/entities/publication/c2189b14-1155-4c68-873a-ddd6691c976a"
+  pdf: "/files/EPFL_TH10876.pdf"
+  award: "2025 ACM SIGDA Outstanding Dissertation Award in EDA"
+  abstract: >-
+    This thesis focuses on developing state-of-the-art logic synthesis methods for advanced
+    technologies. These technologies include conventional CMOS for field-programmable gate arrays
+    (FPGAs) and standard-cell-based designs, as well as superconducting electronics (SCE). In
+    particular, we concentrate on the technology mapping problem, which involves translating a
+    technology-independent circuit description into an interconnection of gates specific to a
+    technology library.
+
+- title: "Enhancing Delay-Driven LUT Mapping With Boolean Decomposition"
+  authors: "A. Tempia Calvino, G. De Micheli, A. Mishchenko, R. Brayton"
+  venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+  short: "TCAD"
+  year: 2024
+  date: 2024-09-10
+  type: journal
+  url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10673978"
+  abstract: >-
+    Ashenhurst-Curtis decomposition (ACD) is a decomposition technique used, in particular, to map
+    combinational logic into lookup tables (LUTs) structures when synthesizing hardware designs. This
+    paper presents a novel fast and versatile technique of ACD suitable for delay optimization. We
+    use this new formulation to compute two-level decompositions into a variable number of LUTs and
+    enhance delay-driven LUT mapping by performing ACD on the fly.
+
+- title: "Technology Legalization and Optimization for Adiabatic Quantum-Flux Parametron"
+  authors: "S.-Y. Lee, A. Tempia Calvino, G. De Micheli"
+  venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+  short: "TCAD"
+  year: 2024
+  date: 2024-07-26
+  type: journal
+  url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10611739"
+  abstract: >-
+    Adiabatic quantum-flux parametron (AQFP) is an energy-efficient superconducting technology.
+    Before physical design can be performed, AQFP technology mapping involves not only mapping logic
+    into supported gate types but also legalizing the circuit to fulfill the technology-imposed
+    constraints on path balancing and fanout branching by inserting buffer and splitter cells. In
+    this paper, we identify that the AQFP legalization problem is a scheduling problem; propose
+    linear-time depth-optimal scheduling and irredundant buffer insertion algorithms; present
+    heuristic optimization algorithms to further reduce buffer count; and suggest an unsupervised
+    design space exploration approach for AQFP technology mapping.
+
+- title: "On the Synthesis of High-performance Homomorphic Boolean Circuits"
+  authors: "M. Yu, S. Carpov, A. Tempia Calvino, G. De Micheli"
+  venue: "Workshop on Encrypted Computing & Applied Homomorphic Cryptography (WAHC)"
+  short: "WAHC"
+  year: 2024
+  date: 2024-11-18
+  type: workshop
+  abstract: >-
+    In Torus fully homomorphic encryption (TFHE), each look-up table (LUT) corresponds to a costly
+    functional bootstrapping (FBS) operation, making TFHE circuit synthesis an area-oriented
+    technology mapping problem in which the circuit evaluation time correlates with the number of
+    LUTs. This paper presents methods to synthesize more compact homomorphic Boolean circuits: a
+    systematic analysis of the Boolean properties that yield valid large LUTs to facilitate
+    technology mapping, and techniques that maximize the use of multi-value functional bootstrapping
+    (MVFBS) during mapping. Implemented in the mockturtle logic synthesis library, the approach
+    achieves a 29.94% reduction in circuit execution time.
+
+- title: "Late Breaking Results: Majority-Inverter Graph Minimization by Design Space Exploration"
+  authors: "S.-Y. Lee, A. Tempia Calvino, H. Riener, G. De Micheli"
+  venue: "IEEE/ACM Design Automation Conference (DAC)"
+  short: "DAC"
+  year: 2024
+  date: 2024-06-22
+  type: conference
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2024/DAC_LBR.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2024/DAC_LBR.pdf"
+  abstract: >-
+    The majority-inverter graph (MIG) is a homogeneous logic network widely used in logic synthesis
+    for majority-based emerging technologies. In this paper, we explore combinations of
+    well-developed MIG optimization algorithms using an on-the-fly design space exploration strategy
+    and present the latest best results on MIG size minimization of EPFL benchmarks.
+
+- title: "Practical Boolean Decomposition for Delay-driven LUT Mapping"
+  authors: "A. Tempia Calvino, G. De Micheli, A. Mishchenko, R. Brayton"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2024
+  date: 2024-06-03
+  type: workshop
+  award: "IWLS 2024 Best Student Paper Nomination"
+  abstract: >-
+    Ashenhurst-Curtis decomposition (ACD) is a decomposition technique used, in particular, to map
+    combinational logic into lookup table (LUT) structures when synthesizing hardware designs.
+    However, available implementations of ACD suffer from excessive complexity, search-space
+    restrictions, and slow run time, which limit their applicability and scalability. This paper
+    presents a novel fast and versatile technique of ACD suitable for delay optimization. We use this
+    formulation to compute two-level decompositions into a variable number of LUTs and enhance
+    delay-driven LUT mapping by performing ACD on the fly. Experiments with heavily optimized
+    benchmarks show an average delay improvement of 12.39% and an area reduction of 2.20% compared to
+    state-of-the-art LUT mapping, with affordable run time, and improve the best-known delay for 4
+    benchmarks in the EPFL synthesis competition.
+
+- title: "Post-Mapping Resubstitution For Area-Oriented Optimization"
+  authors: "A. Costamagna, A. Tempia Calvino, A. Mishchenko, G. De Micheli"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2024
+  date: 2024-06-02
+  type: workshop
+  abstract: >-
+    This paper focuses on area minimization for circuits already mapped to a technology library,
+    possibly under delay constraints. Traditional methods first optimize a technology-independent
+    representation and then perform technology mapping, assuming that reducing the number of
+    technology-independent nodes correlates with reduced area after mapping. This paper investigates
+    the validity of this assumption and the use of technology-dependent algorithms. We propose an
+    area-oriented engine for mapped circuits that relies on a database of mapped sub-networks to
+    achieve efficient resynthesis. Experimental results on EPFL and IWLS benchmarks, after aggressive
+    technology-independent area-oriented optimization and mapping, show that the proposed method leads
+    to an additional area reduction of 2.50% without worsening the delay.
+
+- title: "Area-Oriented Resubstitution For Networks of Look-Up Tables"
+  authors: "A. Costamagna, A. Tempia Calvino, A. Mishchenko, G. De Micheli"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2024
+  date: 2024-06-01
+  type: workshop
+  award: "IWLS 2024 Best Student Paper Award"
+  abstract: >-
+    This paper addresses the challenge of reducing the number of nodes in Look-Up Table (LUT)
+    networks, relevant both to minimizing node count under FPGA resource constraints and to
+    area-oriented design space exploration for standard-cell designs. State-of-the-art substitution
+    algorithms for LUT networks rely heavily on SAT solving, limiting the number of optimization
+    attempts and the size of substitution sub-networks to one node. Conversely, our method relies on
+    circuit simulation to increase the number of substitution candidates and enables substitutions
+    with more than one node, identifying optimization opportunities overlooked by other methods.
+
+- title: "Scalable Logic Rewriting Using Don't Cares"
+  authors: "A. Tempia Calvino, G. De Micheli"
+  venue: "Design, Automation & Test in Europe Conference & Exhibition (DATE)"
+  short: "DATE"
+  year: 2024
+  date: 2024-03-25
+  type: conference
+  url: "https://infoscience.epfl.ch/entities/publication/6fce58f0-2967-4fde-85c0-27c81d0f1e36"
+  abstract: >-
+    Logic rewriting is a powerful optimization technique that replaces small sections of a Boolean
+    network with better implementations. In this paper, we propose a technique to enable the usage of
+    don't cares in logic rewriting based on pre-computed databases. We show how to process the
+    database and perform Boolean matching with Boolean don't cares, with negligible run time
+    overhead.
+
+- title: "Technology-Aware Logic Synthesis for Superconducting Electronics"
+  authors: "R. Bairamkulov, S.-Y. Lee, A. Tempia Calvino, D. Marakkalage, M. Yu, G. De Micheli"
+  venue: "Design, Automation & Test in Europe Conference & Exhibition (DATE)"
+  short: "DATE"
+  year: 2024
+  date: 2024-03-25
+  type: conference
+  url: "https://infoscience.epfl.ch/record/310900"
+  abstract: >-
+    Superconducting electronics provide us with cryogenic digital circuits that can rival established
+    technologies in performance and energy consumption. This review focuses on methods, algorithms,
+    and open-source design tools for logic synthesis of superconducting circuits in two major
+    families: single-flux quantum (SFQ) circuits and adiabatic quantum flux parametron (AQFP).
+
+- title: "In Medio Stat Virtus: Combining Boolean and Pattern Matching"
+  authors: "G. Radi, A. Tempia Calvino, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2024
+  date: 2024-01-24
+  type: conference
+  url: "https://infoscience.epfl.ch/record/306598"
+  abstract: >-
+    Technology mapping transforms a technology-independent representation into a technology-dependent
+    one given a library of cells. This process is performed by means of local replacements that are
+    extracted by matching sections of the subject graph to library cells. Matching techniques are
+    classified mainly into pattern and Boolean. These two techniques differ in quality and number of
+    generated matches, scalability, and run time. This paper proposes hybrid matching, a new
+    methodology that integrates both techniques in a technology mapping algorithm.
+
+- title: "Algebraic and Boolean Methods for SFQ Superconducting Circuits"
+  authors: "A. Tempia Calvino, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2024
+  date: 2024-01-24
+  type: conference
+  url: "https://infoscience.epfl.ch/record/306597"
+  abstract: >-
+    Rapid single-flux quantum (RSFQ) is one of the most advanced and promising superconducting logic
+    families, offering exceptional energy efficiency and speed. RSFQ technology requires delay
+    registers (DFFs) and splitter cells to satisfy the path-balancing and driving-capacity
+    constraints. In this paper, we present a comprehensive exploration of methods for synthesizing
+    and optimizing SFQ circuits. In the experimental results, we show an average reduction in the
+    area and delay of 43% and 34%, respectively, compared to the state-of-the-art.
+
+- title: "Technology Mapping Using Multi-output Library Cells"
+  authors: "A. Tempia Calvino, G. De Micheli"
+  venue: "International Conference on Computer-Aided Design (ICCAD)"
+  short: "ICCAD"
+  year: 2023
+  date: 2023-10-30
+  type: conference
+  url: "https://infoscience.epfl.ch/record/306596"
+  abstract: >-
+    This paper presents a scalable method to increase the support of multi-output library cells in
+    technology mapping. Our contributions include an approach to detect multi-output cells, a fast
+    Boolean matching methodology, and a technology mapping algorithm that supports multi-output
+    cells. Unlike previous work, we address the mapping problem over the whole network. This has the
+    advantage of optimizing area and delay without requiring many incremental steps.
+
+- title: "Synthesis of SFQ Circuits with Compound Gates"
+  authors: "R. Bairamkulov, A. Tempia Calvino, G. De Micheli"
+  venue: "Conference on Very Large Scale Integration (VLSI-SoC)"
+  short: "VLSI-SoC"
+  year: 2023
+  date: 2023-10-17
+  type: conference
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2023/VLSI_SoC.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2023/VLSI_SoC.pdf"
+  award: "VLSI-SoC 2023 Best Paper Award"
+  abstract: >-
+    Rapid single-flux quantum (RSFQ) is one of the most advanced superconducting technologies with
+    the potential to supplement or replace conventional VLSI systems. However, scaling RSFQ systems
+    up to VLSI complexity is challenging due to fundamental differences between RSFQ and CMOS
+    technologies. Gate compounding is a novel technique that substantially enriches the functionality
+    realizable within a single clock cycle. In this paper, we propose a technology mapping method for
+    RSFQ circuits that exploits compound gates. Our results show, on average, a 33% lower logic depth
+    with 24% smaller area, as compared to the state of the art.
+
+- title: "Improving Standard-Cell Design Flow using Factored Form Optimization"
+  authors: "A. Tempia Calvino, A. Mishchenko, H. Schmit, E. Mahintorabi, G. De Micheli, X. Xu"
+  venue: "Design Automation Conference (DAC)"
+  short: "DAC"
+  year: 2023
+  date: 2023-07-11
+  type: conference
+  url: "https://infoscience.epfl.ch/record/303830"
+  abstract: >-
+    Factored form is a multi-level representation of a Boolean function that readily maps into CMOS
+    technology. In particular, the number of literals of a factored form correlates well with the
+    number of transistors. This paper focuses on developing techniques for minimizing the total
+    factored form literals count in an and-inverter graph.
+
+- title: "Boolean Decomposition Revisited"
+  authors: "A. Mishchenko, R. Brayton, A. Tempia Calvino, G. De Micheli"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2023
+  date: 2023-06-06
+  type: workshop
+  url: "http://people.eecs.berkeley.edu/~alanmi/publications/2023/iwls23_lut.pdf"
+  pdf: "http://people.eecs.berkeley.edu/~alanmi/publications/2023/iwls23_lut.pdf"
+  abstract: >-
+    Ashenhurst-Curtis decomposition (ACD) is well-known and widely used in logic synthesis for logic
+    restructuring to save area and reduce delay, and in technology dependent optimization to overcome
+    structural bias when mapping into LUTs and LUT structures. The paper offers several
+    simplifications that allow for a fast and flexible implementation of ACD using truth tables for
+    functions up to 16 inputs. A practical extension allows for an efficient use of ACD in
+    delay-driven mapping, which can enhance state-of-the-art LUT mappers.
+
+- title: "Depth-optimal Buffer and Splitter Insertion and Optimization in AQFP Circuits"
+  authors: "A. Tempia Calvino, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2023
+  date: 2023-01-16
+  type: conference
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2023/aspdac23.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2023/aspdac23.pdf"
+  abstract: >-
+    The Adiabatic Quantum-Flux Parametron (AQFP) is an energy-efficient superconducting logic family.
+    AQFP technology requires buffer and splitting elements (B/S) to be inserted to satisfy
+    path-balancing and fanout-branching constraints. In this work, we study the B/S insertion and
+    optimization methods. The paper proposes an algorithm for B/S insertion that guarantees global
+    depth optimality, a new approach for B/S optimization based on minimum register retiming, and a
+    B/S optimization flow.
+
+- title: "Dependency Graphs to Boost the Verification of SysML Models"
+  authors: "L. Apvrille, P. Saqui-Sannes, O. A. Hotescu, A. Tempia Calvino"
+  venue: "Springer (book chapter)"
+  short: "Springer"
+  year: 2023
+  date: 2023-01-06
+  type: journal
+  url: "https://oatao.univ-toulouse.fr/29329/"
+  abstract: >-
+    A drawback of model checking is that the entire SysML model is used for the verification, even if
+    the property targets a sub-system of the model. In this paper, it is suggested to rely on
+    dependency graphs to avoid applying model checking to the entire system when only a subset of the
+    latter needs to be taken into account.
+
+- title: "Utilizing XMG-based synthesis to preserve self-duality for RFET-based circuits"
+  authors: "S. Rai, A. Tempia Calvino, H. Riener, G. De Micheli, A. Kumar"
+  venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+  short: "TCAD"
+  year: 2022
+  date: 2022-06-20
+  type: journal
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2022/rai_tmp.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2022/rai_tmp.pdf"
+  abstract: >-
+    Individual transistors based on emerging reconfigurable nanotechnologies exhibit electrical
+    conduction for both types of charge carriers. These reconfigurable field-effect transistors
+    (RFETs) enable dynamic reconfiguration to demonstrate either a p- or an n-type functionality.
+    This duality is efficiently abstracted as a self-dual Boolean logic. In this article, we
+    specifically aim to preserve self-duality by using Xor-majority graphs (XMGs) as the logic
+    representation during logic synthesis and technology mapping.
+
+- title: "The EPFL logic synthesis libraries"
+  authors: "M. Soeken, H. Riener, W. Haaswijk, E. Testa, B. Schmitt, G. Meuli, F. Mozafari, S.-Y. Lee, A. Tempia Calvino, D. S. Marakkalage, G. De Micheli"
+  venue: "arXiv preprint arXiv:1805.05121"
+  short: "arXiv"
+  year: 2022
+  date: 2022-06-03
+  type: preprint
+  url: "https://arxiv.org/pdf/1805.05121.pdf"
+  pdf: "https://arxiv.org/pdf/1805.05121.pdf"
+  abstract: >-
+    We present a collection of modular open source C++ libraries for the development of logic
+    synthesis applications. These libraries can be used to develop applications for the design of
+    classical and emerging technologies, as well as for the implementation of quantum compilers.
+
+- title: "Majority-based design flow for AQFP superconducting family"
+  authors: "G. Meuli, V. Possani, R. Singh, S.-Y. Lee, A. Tempia Calvino, D. Marakkalage, P. Vuillod, L. Amaru, S. Chase, J. Kawa, G. De Micheli"
+  venue: "Design, Automation & Test in Europe Conference & Exhibition (DATE)"
+  short: "DATE"
+  year: 2022
+  date: 2022-03-14
+  type: conference
+  url: "https://infoscience.epfl.ch/record/295242/files/giulia_DATE22.pdf"
+  pdf: "https://infoscience.epfl.ch/record/295242/files/giulia_DATE22.pdf"
+  abstract: >-
+    Adiabatic superconducting devices are promising candidates to develop high-speed/low-power
+    electronics. Being the technology fundamentally different from CMOS, new challenges are posed to
+    design automation tools: library cells are controlled by multi-phase clocks, they implement the
+    majority logic function, and they have limited fanout. We present a product-level RTL-to-GDSII
+    flow for the design of Adiabatic Quantum-Flux-Parametron (AQFP) electronic circuits.
+
+- title: "SysML models verification relying on dependency graphs"
+  authors: "L. Apvrille, P. de Saqui-Sannes, O. Hotescu, A. Tempia Calvino"
+  venue: "International Conference on Model-Driven Engineering and Software Development (MODELSWARD)"
+  short: "MODELSWARD"
+  year: 2022
+  date: 2022-02-08
+  type: conference
+  url: "https://telecom-paris.hal.science/hal-03575960/file/ApvrilleEtAll_DG_modelsward2022.pdf"
+  pdf: "https://telecom-paris.hal.science/hal-03575960/file/ApvrilleEtAll_DG_modelsward2022.pdf"
+  abstract: >-
+    Incremental modeling of systems leads to the repeated verification of parts of systems models
+    that were already verified in previous versions of the SysML model. This paper proposes to
+    optimize the verification process by generating dependency graphs from SysML models.
+
+- title: "A Versatile Mapping Approach for Technology Mapping and Graph Optimization"
+  authors: "A. Tempia Calvino, H. Riener, S. Rai, G. De Micheli"
+  venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+  short: "ASP-DAC"
+  year: 2022
+  date: 2022-01-17
+  type: conference
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2022/Versatile.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2022/Versatile.pdf"
+  abstract: >-
+    This paper proposes a versatile mapping approach that has three objectives: it can map from one
+    technology-independent graph representation to another; it can map to a cell library; it supports
+    logic rewriting. The mapper is the first one of its kind to support remapping among various graph
+    representations, thus enabling specialized mapping to emerging technologies and for security
+    applications.
+
+- title: "From logic to gates: A versatile mapping approach to restructure logic"
+  authors: "A. Tempia Calvino, H. Riener, S. Rai, G. De Micheli"
+  venue: "International Workshop on Logic & Synthesis (IWLS)"
+  short: "IWLS"
+  year: 2021
+  date: 2021-07-06
+  type: workshop
+  url: "https://si2.epfl.ch/~demichel/publications/archive/2021/IWLS-Versatile.pdf"
+  pdf: "https://si2.epfl.ch/~demichel/publications/archive/2021/IWLS-Versatile.pdf"
+  award: "IWLS 2021 Best Student Paper Candidate"
+  abstract: >-
+    This paper proposes a versatile mapping approach for restructuring logic that has two objectives:
+    it can map from one technology-independent graph representation to another; it can map to a cell
+    library.
+
+- title: "Direct model-checking of SysML models"
+  authors: "A. Tempia Calvino, L. Apvrille"
+  venue: "International Conference on Model-Driven Engineering and Software Development (MODELSWARD)"
+  short: "MODELSWARD"
+  year: 2021
+  date: 2021-02-08
+  type: conference
+  url: "https://telecom-paris.hal.science/hal-03349263/document"
+  pdf: "https://telecom-paris.hal.science/hal-03349263/document"
+  award: "MODELSWARD 2021 Best Poster Award"
+  abstract: >-
+    Model-checking of high-level models, e.g. SysML models, usually first requires a model
+    transformation to a low level formal specification. This paper proposes a new model-checker that
+    can be applied (almost) directly to the SysML model.
+
+- title: "Implementation of Algorithms for Synthesis of Digital Circuits"
+  authors: "A. Tempia Calvino"
+  venue: "M.Sc. Thesis, Politecnico di Torino and Télécom Paris"
+  short: "MSc Thesis"
+  year: 2020
+  date: 2020-03-27
+  type: thesis
+  url: "https://webthesis.biblio.polito.it/secure/14447/1/tesi.pdf"
+  pdf: "https://webthesis.biblio.polito.it/secure/14447/1/tesi.pdf"
+  abstract: >-
+    This thesis describes several techniques to be used in EDA synthesis tools to increase the QoR of
+    digital circuits. We present circuit transformations able to improve the delay by pushing
+    critical signals forward in the logic.

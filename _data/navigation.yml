@@ -1,22 +1,22 @@
-# main links links
+# Top navigation. Add/remove/reorder items here.
 main:
+  - title: "Home"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
+    url: /talks/
+
+  - title: "Patents"
+    url: /patents/
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
+    url: /teaching/
+
+  - title: "Awards"
+    url: /awards/
+
   - title: "CV"
     url: /cv/
-    
-  # - title: "Guide"
-  #   url: /markdown/

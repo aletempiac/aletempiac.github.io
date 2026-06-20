@@ -1,0 +1,47 @@
+---
+layout: page
+title: "Publications"
+permalink: /publications/
+lead: "Peer-reviewed papers, journal articles, and theses."
+description: "List of publications by Alessandro Tempia Calvino."
+---
+
+{% assign sorted = site.data.publications | sort: "date" | reverse %}
+{% assign present_types = sorted | map: "type" | uniq %}
+
+{% assign type_order = "journal,conference,workshop,preprint,thesis" | split: "," %}
+{% assign type_labels = "journal:Journal,conference:Conference,workshop:Workshop,preprint:Preprint,thesis:Thesis" | split: "," %}
+
+<div class="toolbar">
+  <div class="filters">
+    <button class="filter-chip is-active" data-filter="all" type="button">All</button>
+    {% for t in type_order %}
+      {% if present_types contains t %}
+        {% assign label = t | capitalize %}
+        {% for pair in type_labels %}
+          {% assign kv = pair | split: ":" %}
+          {% if kv[0] == t %}{% assign label = kv[1] %}{% endif %}
+        {% endfor %}
+        <button class="filter-chip" data-filter="{{ t }}" type="button">{{ label }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="search">
+    <input type="search" id="pub-search" placeholder="Search by title, venue, year..." aria-label="Search publications">
+  </div>
+</div>
+
+<div id="pub-list">
+  {% assign by_year = sorted | group_by: "year" %}
+  {% assign years = by_year | sort: "name" | reverse %}
+  {% for group in years %}
+    <section class="year-group">
+      <h2 class="year-group__label">{{ group.name }}</h2>
+      {% for p in group.items %}
+        {% include publication-item.html pub=p %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+
+  <p class="empty-state" id="pub-empty">No publications match your filters.</p>
+</div>

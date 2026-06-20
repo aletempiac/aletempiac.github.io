@@ -1,0 +1,57 @@
+# Awards & Honors
+# To add an award, append below (newest on top).
+# Fields: title, year, venue (optional), detail (optional), highlight (optional bool to feature on home)
+
+- title: "Outstanding Dissertation Award in EDA"
+  year: 2025
+  venue: "ACM SIGDA"
+  detail: "For the thesis \"Technology Mapping and Optimization Algorithms for Logic Synthesis of Advanced Technologies\"."
+  highlight: true
+
+- title: "O-1 U.S. Work Visa"
+  year: 2024
+  venue: "United States"
+  detail: "Granted to individuals with an extraordinary ability in the sciences."
+  highlight: false
+
+- title: "Best Student Paper Award"
+  year: 2024
+  venue: "IWLS 2024"
+  detail: "\"Area-Oriented Resubstitution For Networks of Look-Up Tables\""
+  highlight: true
+
+- title: "Best Student Paper Nomination"
+  year: 2024
+  venue: "IWLS 2024"
+  detail: "\"Practical Boolean Decomposition for Delay-driven LUT Mapping\""
+  highlight: false
+
+- title: "Best Paper Award"
+  year: 2023
+  venue: "VLSI-SoC 2023"
+  detail: "\"Synthesis of SFQ Circuits with Compound Gates\""
+  highlight: true
+
+- title: "First Place, IWLS Programming Contest"
+  year: 2022
+  venue: "IWLS 2022"
+  detail: "Synthesis of small circuits for completely-specified multi-output Boolean functions represented using truth tables"
+  highlight: true
+
+- title: "Best Student Paper Candidate"
+  year: 2021
+  venue: "IWLS 2021"
+  detail: "\"From Logic to Gates: A Versatile Mapping Approach to Restructure Logic\""
+  highlight: true
+
+- title: "Best Poster Award"
+  year: 2021
+  venue: "MODELSWARD 2021"
+  detail: "\"Direct Model-checking of SysML Models\""
+  highlight: false
+
+- title: "EDIC IC Fellowship"
+  year: 2020
+  venue: "EPFL"
+  detail: "Doctoral fellowship from the EDIC doctoral program."
+  highlight: true

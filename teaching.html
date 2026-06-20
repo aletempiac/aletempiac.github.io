@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Teaching"
+permalink: /teaching/
+lead: "Courses and teaching assistantships."
+description: "Teaching activities of Alessandro Tempia Calvino."
+---
+
+{% assign items = site.data.teaching %}
+<div>
+  {% for t in items %}
+    <article class="pub">
+      <div class="pub__aside">
+        <span class="badge">{{ t.venue }}</span>
+        <span class="badge badge--year">{{ t.year }}</span>
+      </div>
+      <div class="pub__body">
+        <h3 class="pub__title">{{ t.title }}</h3>
+        <p class="pub__venue">
+          {{ t.role }}{% if t.venue %} &middot; {{ t.venue }}{% endif %}{% if t.location %} &middot; {{ t.location }}{% endif %}{% if t.period %} &middot; {{ t.period }}{% endif %}
+        </p>
+        {% if t.description %}<p>{{ t.description }}</p>{% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

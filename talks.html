@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Talks"
+permalink: /talks/
+lead: "Invited, conference, and workshop presentations."
+description: "Talks and presentations by Alessandro Tempia Calvino."
+---
+
+{% assign invited = site.data.talks.invited | sort: "year" | reverse %}
+{% assign conference = site.data.talks.conference | sort: "year" | reverse %}
+
+{% if invited and invited.size > 0 %}
+<section class="section">
+  <div class="section__head"><h2>Invited Talks</h2></div>
+  <div>
+    {% for t in invited %}
+      {% include talk-item.html talk=t %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if conference and conference.size > 0 %}
+<section class="section">
+  <div class="section__head"><h2>Conference &amp; Workshop Talks</h2></div>
+  <div>
+    {% for t in conference %}
+      {% include talk-item.html talk=t %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

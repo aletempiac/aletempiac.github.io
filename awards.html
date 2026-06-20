@@ -1,0 +1,14 @@
+---
+layout: page
+title: "Awards & Honors"
+permalink: /awards/
+lead: "Recognitions, fellowships, and contest results."
+description: "Awards and honors received by Alessandro Tempia Calvino."
+---
+
+{% assign awards = site.data.awards | sort: "year" | reverse %}
+<div>
+  {% for a in awards %}
+    {% include award-item.html award=a %}
+  {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+{% assign t = include.talk %}
+<article class="pub">
+  <div class="pub__aside">
+    {% if t.short %}<span class="badge">{{ t.short }}</span>{% endif %}
+    <span class="badge badge--year">{{ t.year }}</span>
+  </div>
+  <div class="pub__body">
+    <h3 class="pub__title">{{ t.title }}</h3>
+    <p class="pub__venue">
+      {{ t.venue }}{% if t.location and t.location != "" %} &middot; {{ t.location }}{% endif %}
+    </p>
+    {% if t.description %}<p>{{ t.description }}</p>{% endif %}
+    {% if t.url %}
+    <div class="pub__links">
+      <a class="btn btn--sm" href="{{ t.url }}" target="_blank" rel="noopener">Watch / Slides</a>
+    </div>
+    {% endif %}
+  </div>
+</article>
