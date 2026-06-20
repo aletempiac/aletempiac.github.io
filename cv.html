@@ -1,0 +1,99 @@
+---
+layout: page
+title: "Curriculum Vitae"
+permalink: /cv/
+lead: "A summary of my education, experience, and activities."
+description: "Curriculum vitae of Alessandro Tempia Calvino."
+redirect_from:
+  - /resume/
+---
+
+{% assign cv = site.data.cv %}
+
+<p>
+  <a class="btn btn--primary" href="{{ '/files/resume.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Download PDF
+  </a>
+</p>
+
+{% if cv.education %}
+<section class="cv-section">
+  <h2>Education</h2>
+  {% for e in cv.education %}
+    <div class="cv-entry">
+      <div class="cv-entry__period">{{ e.period }}</div>
+      <div>
+        <div class="cv-entry__title">{{ e.degree }}</div>
+        <div class="cv-entry__sub">{{ e.institution }}{% if e.location %} &middot; {{ e.location }}{% endif %}</div>
+        {% if e.details and e.details.size > 0 %}
+        <ul>{% for d in e.details %}<li>{{ d }}</li>{% endfor %}</ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if cv.experience %}
+<section class="cv-section">
+  <h2>Experience</h2>
+  {% for x in cv.experience %}
+    <div class="cv-entry">
+      <div class="cv-entry__period">{{ x.period }}</div>
+      <div>
+        <div class="cv-entry__title">{{ x.role }}</div>
+        <div class="cv-entry__sub">{{ x.organization }}{% if x.location and x.location != "" %} &middot; {{ x.location }}{% endif %}</div>
+        {% if x.details and x.details.size > 0 %}
+        <ul>{% for d in x.details %}<li>{{ d }}</li>{% endfor %}</ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if cv.projects %}
+<section class="cv-section">
+  <h2>Projects</h2>
+  {% for p in cv.projects %}
+    <div class="cv-entry">
+      <div class="cv-entry__period">
+        {% if p.url and p.url != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+      </div>
+      <div>
+        <div class="cv-entry__title">{{ p.name }}</div>
+        <div class="cv-entry__sub">{{ p.description }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if cv.skills %}
+<section class="cv-section">
+  <h2>Skills</h2>
+  {% for s in cv.skills %}
+    <div class="skill-group">
+      <div class="skill-group__label">{{ s.category }}</div>
+      <div class="tag-list">
+        {% for item in s.items %}<span class="tag">{{ item }}</span>{% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if cv.service %}
+<section class="cv-section">
+  <h2>Service &amp; Leadership</h2>
+  <ul>
+    {% for s in cv.service %}<li>{{ s }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="cv-section">
+  <h2>Full CV (PDF)</h2>
+  <iframe class="pdf-frame" src="{{ '/files/resume.pdf' | relative_url }}" title="CV PDF"></iframe>
+</section>

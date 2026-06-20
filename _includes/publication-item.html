@@ -1,0 +1,30 @@
+{% assign p = include.pub %}
+{% capture searchblob %}{{ p.title }} {{ p.venue }} {{ p.short }} {{ p.year }} {{ p.type }} {{ p.award }}{% endcapture %}
+<article class="pub" data-type="{{ p.type }}" data-search="{{ searchblob | downcase | strip_newlines | escape }}">
+  <div class="pub__aside">
+    {% if p.short %}<span class="badge">{{ p.short }}</span>{% endif %}
+    <span class="badge badge--year">{{ p.year }}</span>
+  </div>
+  <div class="pub__body">
+    <h3 class="pub__title">
+      {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+    </h3>
+    {% if p.authors %}
+    <p class="pub__authors">{{ p.authors | replace: "A. Tempia Calvino", "<strong>A. Tempia Calvino</strong>" }}</p>
+    {% endif %}
+    <p class="pub__venue">{{ p.venue }} &middot; <span class="pub__year">{{ p.year }}</span></p>
+    {% if p.award %}<span class="badge badge--award">&#9733; {{ p.award }}</span>{% endif %}
+
+    {% if p.abstract %}
+    <details class="pub__abstract">
+      <summary>Abstract</summary>
+      <p>{{ p.abstract }}</p>
+    </details>
+    {% endif %}
+
+    <div class="pub__links">
+      {% if p.url %}<a class="btn btn--sm" href="{{ p.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      {% if p.pdf and p.pdf != p.url %}<a class="btn btn--sm" href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+    </div>
+  </div>
+</article>

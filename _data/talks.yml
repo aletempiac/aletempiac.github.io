@@ -1,0 +1,125 @@
+# Talks
+# To add a talk, append a new entry to the relevant list (newest on top).
+# Fields: title, venue, location (optional), year, short (optional badge), url (optional), description (optional)
+# Two lists: invited and conference.
+
+invited:
+  - title: "Technology-aware Logic Synthesis for Superconducting Electronics"
+    venue: "International Workshop on Quantum, Cryogenic and Superconductive Computing"
+    location: "Fukuoka, Japan"
+    year: 2024
+
+  - title: "The EPFL Logic Synthesis Libraries: Open-source Tools for Classical and Emerging Technologies"
+    venue: "Free Silicon Conference (FSiC)"
+    location: "Paris, France"
+    year: 2024
+
+  - title: "EPFL Benchmark Results Update"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Zurich, Switzerland"
+    year: 2024
+
+  - title: "Improving Technology Mapping for Standard Cells"
+    venue: "IBM Thomas J. Watson Research Center"
+    location: "Online"
+    year: 2024
+
+  - title: "Improving Delay-driven LUT Mapping with Boolean Decomposition"
+    venue: "Efinix Inc."
+    location: "Online"
+    year: 2024
+
+  - title: "Improving Delay-driven LUT Mapping with Boolean Decomposition"
+    venue: "AMD Inc. (Vivado team)"
+    location: "Online"
+    year: 2023
+
+  - title: "Technology Mapping Using Multi-output Library Cells"
+    venue: "Google X"
+    location: "Online"
+    year: 2023
+
+  - title: "Improving Standard-Cell Design Flow using Factored Form Optimization"
+    venue: "Cadence Design Systems Inc."
+    location: "San Jose, CA, USA"
+    year: 2023
+
+  - title: "EPFL Benchmark Results Update"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Lausanne, Switzerland"
+    year: 2023
+
+  - title: "EPFL Benchmark Results Update"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Online"
+    year: 2022
+
+  - title: "EPFL Benchmark Results Update"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Online"
+    year: 2021
+
+conference:
+  - title: "Practical Boolean Decomposition for Delay-driven LUT Mapping"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Zurich, Switzerland"
+    year: 2024
+
+  - title: "Area-Oriented Resubstitution For Networks of Look-Up Tables"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Zurich, Switzerland"
+    year: 2024
+
+  - title: "Scalable Logic Rewriting Using Don't Cares"
+    venue: "Design, Automation & Test in Europe Conference (DATE)"
+    location: "Valencia, Spain"
+    year: 2024
+
+  - title: "Algebraic and Boolean Methods for SFQ Superconducting Circuits"
+    venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+    location: "Incheon, South Korea"
+    year: 2024
+
+  - title: "In Medio Stat Virtus: Combining Boolean and Pattern Matching"
+    venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+    location: "Incheon, South Korea"
+    year: 2024
+
+  - title: "Technology Mapping Using Multi-output Library Cells"
+    venue: "International Conference on Computer-Aided Design (ICCAD)"
+    location: "San Francisco, CA, USA"
+    year: 2023
+    url: "https://www.youtube.com/watch?v=BDvxVapX1gw&t=568s"
+
+  - title: "Improving Standard-Cell Design Flow using Factored Form Optimization"
+    venue: "Design Automation Conference (DAC)"
+    location: "San Francisco, CA, USA"
+    year: 2023
+    url: "https://www.youtube.com/watch?v=_0h_wePnVhU"
+
+  - title: "Technology Mapping Using Multi-output Library Cells"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Lausanne, Switzerland"
+    year: 2023
+
+  - title: "Depth-Optimal Buffer and Splitter Insertion and Optimization in AQFP Circuits"
+    venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+    location: "Tokyo, Japan"
+    year: 2023
+
+  - title: "Depth-optimal Buffer and Splitter Insertion and Optimization in AQFP Circuits"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Online"
+    year: 2023
+    url: "https://www.youtube.com/watch?v=FxGwOrmuDe8"
+
+  - title: "A Versatile Mapping Approach for Technology Mapping and Graph Optimization"
+    venue: "Asia and South Pacific Design Automation Conference (ASP-DAC)"
+    location: "Online"
+    year: 2022
+
+  - title: "From Logic to Gates: A Versatile Mapping Approach to Restructure Logic"
+    venue: "International Workshop on Logic & Synthesis (IWLS)"
+    location: "Online"
+    year: 2021
+    url: "https://www.youtube.com/watch?v=iu3WGC2t6Vc"

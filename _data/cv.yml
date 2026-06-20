@@ -1,0 +1,109 @@
+# Structured CV data. Edit the sections below; the CV page renders them automatically.
+# A downloadable PDF lives at /files/resume.pdf
+
+education:
+  - degree: "Ph.D. in Computer and Communication Sciences"
+    institution: "EPFL (École Polytechnique Fédérale de Lausanne)"
+    location: "Lausanne, Switzerland"
+    period: "2020 - 2024"
+    details:
+      - "Thesis: Technology Mapping and Optimization Algorithms for Logic Synthesis of Advanced Technologies"
+      - "Advisor: Prof. Dr. Giovanni De Micheli, Integrated Systems Laboratory (LSI)"
+
+  - degree: "M.Sc. in Computer Engineering"
+    institution: "Télécom Paris, EURECOM"
+    location: "Biot, France"
+    period: "2018 - 2020"
+    details:
+      - "Specialization in Smart Objects (joint master program with Politecnico di Torino)"
+      - "GPA 4.0/4"
+      - "Thesis: Implementation of Algorithms for Synthesis of Digital Circuits"
+
+  - degree: "M.Sc. in Computer Engineering"
+    institution: "Politecnico di Torino"
+    location: "Torino, Italy"
+    period: "2017 - 2020"
+    details:
+      - "Specialization in Embedded Systems (joint master program with Télécom Paris)"
+      - "Full marks with honor (110 cum laude / 110)"
+      - "Thesis: Implementation of Algorithms for Synthesis of Digital Circuits"
+
+  - degree: "B.Sc. in Computer Engineering"
+    institution: "Politecnico di Torino"
+    location: "Torino, Italy"
+    period: "2014 - 2017"
+    details: []
+
+experience:
+  - role: "Senior R&D Staff Engineer"
+    organization: "Synopsys Inc."
+    location: "Sunnyvale, California, USA"
+    period: "2024 - present"
+    details:
+      - "Research and development of synthesis algorithms for Fusion Compiler and Design Compiler"
+
+  - role: "Doctoral Researcher"
+    organization: "EPFL (École Polytechnique Fédérale de Lausanne)"
+    location: "Lausanne, Switzerland"
+    period: "2020 - 2024"
+    details:
+      - "Integrated Systems Laboratory: electronic design automation (EDA), logic synthesis, and emerging technologies"
+      - "Teaching undergraduate and graduate courses and supervising Master's projects"
+      - "Advisor: Prof. Dr. Giovanni De Micheli"
+
+  - role: "Research Intern"
+    organization: "X, the Moonshot Factory (Google X)"
+    location: "Mountain View, California, USA"
+    period: "2022"
+    details:
+      - "Logic synthesis and electronic design automation (EDA)"
+      - "Part of the work was published at DAC 2023"
+
+  - role: "R&D Engineer"
+    organization: "Télécom Paris, EURECOM"
+    location: "Biot, France"
+    period: "2020"
+    details:
+      - "Implementation of a model-checker for embedded system models on TTool"
+      - "Work published at MODELSWARD 21, MODELSWARD 22, and in a Springer book chapter"
+      - "Best poster award at MODELSWARD 21"
+
+  - role: "Intern"
+    organization: "Synopsys"
+    location: "Montbonnot-Saint-Martin, France"
+    period: "2019"
+    details:
+      - "Implementation of timing-driven algorithms for synthesis of digital circuits"
+
+  - role: "Teaching Assistant"
+    organization: "Politecnico di Torino & EPFL"
+    location: ""
+    period: "2017 - 2024"
+    details:
+      - "Politecnico di Torino: Algorithms and Programming in C, Object-Oriented Programming"
+      - "EPFL: Design Technologies for Integrated Systems, Real-Time Embedded Systems, Digital Systems Design"
+
+projects:
+  - name: "Mockturtle"
+    description: "A C++17 logic synthesis framework; development of logic synthesis algorithms."
+    url: "https://github.com/lsils/mockturtle"
+  - name: "TTool"
+    description: "A toolkit for edition, simulation and formal verification of UML and SysML diagrams; development of the SysML model-checker (AVATAR)."
+    url: "https://gitlab.telecom-paris.fr/mbe-tools/TTool/"
+  - name: "LDPC HW Decoder"
+    description: "Design of a Low Density Parity Check codes channel decoder for 5G wireless communications, with an efficient fixed-point FPGA implementation."
+    url: ""
+
+skills:
+  - category: "Programming"
+    items: ["C/C++", "Python", "Java", "VHDL / Verilog", "TCL", "Bash", "LaTeX"]
+  - category: "Domains"
+    items: ["Logic synthesis & optimization", "Technology mapping", "Digital design", "Microelectronics", "Computer architecture", "Algorithms & data structures"]
+  - category: "Languages"
+    items: ["English", "Italian", "French"]
+
+service:
+  - "Reviewer for TCAD, TODAES, ICCAD, DATE, DAC, IWLS, DDECS, and ISVLSI"
+  - "Core developer of Mockturtle, an open-source logic synthesis library"
+  - "Maintainer of the EPFL logic synthesis libraries (lstools-showcase) and contributor to the logic synthesis tool ABC"
+  - "Maintainer of the EPFL Combinational Benchmark Suite and its annual competition, with updates presented at the International Workshop on Logic & Synthesis (IWLS)"

@@ -1,0 +1,76 @@
+# Teaching
+# To add an entry, append below (newest on top).
+# Fields: title, role (e.g. "Graduate course"), venue, location, year, period, description
+
+- title: "Teaching Assistant for Design Technologies for Integrated Systems"
+  role: "Graduate course"
+  venue: "EPFL"
+  location: "Lausanne, Switzerland"
+  year: 2023
+  period: "Fall 2023"
+  description: >-
+    Most outstanding features of hardware compilation and techniques for optimizing logic
+    representations and networks. Duties: lecturing, preparing midterm/final exams, weekly exercises
+    and homeworks, grading, and assisting students during lab sessions.
+
+- title: "Teaching Assistant for Digital System Design"
+  role: "Undergraduate course"
+  venue: "EPFL"
+  location: "Lausanne, Switzerland"
+  year: 2023
+  period: "Spring 2023"
+  description: >-
+    Abstractions in digital hardware systems, Boolean algebra, logic gates, combinational and
+    sequential circuits, finite state machines, RTL design, and VHDL. Duties: assisting students in
+    lab sessions, designing the project, and correcting exams and homeworks.
+
+- title: "Teaching Assistant for Real Time Embedded Systems"
+  role: "Graduate course"
+  venue: "EPFL"
+  location: "Lausanne, Switzerland"
+  year: 2022
+  period: "Spring 2022"
+  description: >-
+    Management of embedded systems via polling, interrupts and real-time kernels, with VHDL
+    interfaces, FPGA acquisition systems, and an embedded web server. Duties: assisting students
+    during lab sessions.
+
+- title: "Teaching Assistant for Design Technologies for Integrated Systems"
+  role: "Graduate course"
+  venue: "EPFL"
+  location: "Lausanne, Switzerland"
+  year: 2021
+  period: "Fall 2021"
+  description: >-
+    Hardware compilation, high-level synthesis, representation and optimization of combinational and
+    multi-level logic, retiming, and library binding. Duties: lecturing, preparing exams and
+    exercises, grading, and assisting students during lab sessions.
+
+- title: "Teaching Assistant for Real Time Embedded Systems"
+  role: "Graduate course"
+  venue: "EPFL"
+  location: "Lausanne, Switzerland"
+  year: 2021
+  period: "Spring 2021"
+  description: >-
+    Management of embedded systems via polling, interrupts and real-time kernels, with VHDL
+    interfaces, FPGA acquisition systems, and an embedded web server. Duties: assisting students
+    during lab sessions.
+
+- title: "Teaching Assistant for Object-Oriented Programming"
+  role: "Undergraduate course"
+  venue: "Politecnico di Torino"
+  location: "Torino, Italy"
+  year: 2018
+  period: "Spring 2018"
+  description: >-
+    Assisting students during the lab sessions to solve programming assignments.
+
+- title: "Teaching Assistant for Algorithms and Programming in C"
+  role: "Undergraduate course"
+  venue: "Politecnico di Torino"
+  location: "Torino, Italy"
+  year: 2017
+  period: "Fall 2017"
+  description: >-
+    Assisting students during the lab sessions to solve programming assignments.

@@ -1,0 +1,9 @@
+{% assign a = include.award %}
+<div class="award">
+  <div class="award__year">{{ a.year }}</div>
+  <div>
+    <div class="award__title">{{ a.title }}</div>
+    {% if a.venue %}<div class="award__venue">{{ a.venue }}</div>{% endif %}
+    {% if a.detail %}<div class="award__detail">{{ a.detail }}</div>{% endif %}
+  </div>
+</div>
